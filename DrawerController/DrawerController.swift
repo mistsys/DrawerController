@@ -199,7 +199,6 @@ open class DrawerController: UIViewController, UIGestureRecognizerDelegate {
   fileprivate var _rightDrawerViewController: UIViewController?
   fileprivate var _maximumLeftDrawerWidth = DrawerDefaultWidth
   fileprivate var _maximumRightDrawerWidth = DrawerDefaultWidth
-  fileprivate var enableGesture: Bool
 
   /**
    The center view controller.
@@ -321,6 +320,7 @@ open class DrawerController: UIViewController, UIGestureRecognizerDelegate {
   open var shadowRadius = DrawerDefaultShadowRadius
   open var shadowOpacity = DrawerDefaultShadowOpacity
   open var bezelRange = DrawerBezelRange
+  open var enableGesture: Bool
 
   /**
    The flag determining if a shadow should be drawn off of `centerViewController` when a drawer is open.
