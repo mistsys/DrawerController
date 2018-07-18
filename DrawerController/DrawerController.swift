@@ -320,7 +320,7 @@ open class DrawerController: UIViewController, UIGestureRecognizerDelegate {
   open var shadowRadius = DrawerDefaultShadowRadius
   open var shadowOpacity = DrawerDefaultShadowOpacity
   open var bezelRange = DrawerBezelRange
-  open var enableGesture: Bool
+  open var enableGesture: Bool = false
 
   /**
    The flag determining if a shadow should be drawn off of `centerViewController` when a drawer is open.
