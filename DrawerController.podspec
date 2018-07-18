@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'DrawerController'
-  s.version = '4.1.3'
+  s.version = '4.1.4'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.homepage = 'https://github.com/mistsys/DrawerController'
   s.authors = { 'Sascha Schwabbauer' => 'sascha@evolved.io',
