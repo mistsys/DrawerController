@@ -199,6 +199,7 @@ open class DrawerController: UIViewController, UIGestureRecognizerDelegate {
   fileprivate var _rightDrawerViewController: UIViewController?
   fileprivate var _maximumLeftDrawerWidth = DrawerDefaultWidth
   fileprivate var _maximumRightDrawerWidth = DrawerDefaultWidth
+  fileprivate var enableGesture: Bool
 
   /**
    The center view controller.
@@ -1345,7 +1346,9 @@ open class DrawerController: UIViewController, UIGestureRecognizerDelegate {
 
     self.view.backgroundColor = UIColor.black
 
-    self.setupGestureRecognizers()
+    if enableGesture {
+        self.setupGestureRecognizers()
+    }
   }
 
   open override func viewWillAppear(_ animated: Bool) {
